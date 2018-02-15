@@ -1,0 +1,23 @@
+/*
+@media (min-width: 480px) and (max-width: 520px) {
+    .content-box {
+        color:red;
+    }
+}*/
+
+
+@media (min-width:520px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+@media (max-width:520px) {
+    .dropdown {
+        display:block;
+    }
+    .items {
+        display: none;
+    }
+    
+}
