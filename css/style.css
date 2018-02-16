@@ -14,7 +14,10 @@ body {
 /*main-menu*/
 #mainmenu {
     z-index: 1;
-    background-color: whitesmoke;
+/*    background-color: whitesmoke;*/
+    background-image: url(../img/texture-2012078_960_720.jpg);
+    background-position: center;
+    background-size: cover;
     position: fixed;
     width: 100%;
 }
@@ -40,7 +43,7 @@ a:hover {
 
 /* menu large */
 #mainmenu.large {
-	height: 25vh;
+/*	height: 25vh;*/
 }
 li.large {
     font-size:  1.1em;
@@ -49,10 +52,10 @@ li.large {
 /* menu small */
 
 #mainmenu.small {
-	height: 15vh;
+/*	height: 5vh;*/
 }
 li.small {
-    font-size: 1em;
+    font-size: 0.8em;
 }
 /*main-menu finish*/
 
@@ -114,6 +117,7 @@ header {
     height:90vh;
     overflow: hidden;
     cursor: pointer;
+    box-shadow: 2px 10px 45px 0px rgba(0,0,0,0.75);
     
 }
 
@@ -140,7 +144,7 @@ header:hover #mainheader {
 }
 
 #name {
-    position: relative;
+    position: absolute;
     font-size: 2em;
     top: 50%;
     left: 40%;
@@ -155,5 +159,37 @@ header:hover #mainheader {
 
 
 /*header finish*/
+
+/*section about start*/
+#about {
+    padding:2%;
+    background-image: url(../img/texture-2012078_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.hideme {
+    opacity:0;
+    color: red;
+    font-size: 1.5em;
+    
+}
+.showme {
+  opacity:1;
+  transition: all 3s ease;
+  color:red;
+  padding: 2%;
+}
+
+.hidemore {
+    opacity:0;
+    color: green;
+    font-size: 1.2em;
+}
+
+.showmore {
+    opacity:1;
+    transition: all 5s ease;
+}
+/*section about finish*/
 
 
