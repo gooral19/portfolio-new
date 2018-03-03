@@ -49,3 +49,33 @@ $(document).ready(function() {
         });
     });
 });
+
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.skillshide').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+                $(this).addClass('skillsshow');
+            }
+            if( bottom_of_window < bottom_of_object ){
+                $(this).removeClass('skillsshow');
+            }
+        });
+    });
+});
+
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.skillsmorehide').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+                $(this).addClass('skillsmoreshow');
+            }
+            if( bottom_of_window < bottom_of_object ){
+                $(this).removeClass('skillsmoreshow');
+            }
+        });
+    });
+});
