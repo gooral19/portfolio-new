@@ -23,10 +23,10 @@
   <!-- Image and text -->
   <nav id="mainmenu">
       <ul class="items">
-          <li><i class="fa fa-user-secret"></i><a href="">O mnie</a></li>
-          <li><i class="fa fa-user-secret"></i><a href="CV/CV_Dariusz_Spytkowski.pdf" target="_blank">CV</a></li>
-          <li><i class="fa fa-user-secret"></i><a href="">Umiejętności</a></li>
-          <li><i class="fa fa-user-secret"></i><a href="">Kontakt</a></li>
+          <li><i class="fa fa-user-circle"></i><a href="#about">O mnie</a></li>
+          <li><i class="fa fa-angle-double-down"></i><a href="CV/CV_Dariusz_Spytkowski.pdf" target="_blank">CV</a></li>
+          <li><i class="fa fa-bolt"></i><a href="#skills">Umiejętności</a></li>
+          <li><i class="fa fa-mobile"></i><a href="#contact">Kontakt</a></li>
       </ul>
       <div class="dropdown">
   <span class="home">Home</span>
@@ -47,16 +47,18 @@
        <div id="name">Darek Spytkowski<br> Front-end developer</div>
    </header>
    
-   <section id="about">
+      <section id="about"><a name="about"></a>
    <h2 class="hideme">O mnie</h2>
-   <p class="hidemore">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ea facere quia maiores rem eveniet dolorum deleniti temporibus odio quaerat accusamus, repudiandae animi quas asperiores, explicabo quasi voluptas nesciunt aspernatur!</p>
+   <p class="hidemore">Nazywam się Darek Spytkowski.Jestem absolwentem Politechniki Krakowskiej.Tworzeniem stron internetowych zajmuję się od pół roku.Aby przyspieszyć naukę i lepiej poznać nowe technologie zapisałem się na stacjonarny kurs tworzenia stron internetowych w Akademii 108.<br><br>Mimo że jestem początkującym front-end developerem do zadań podchodzę z pasją i zaangażowaniem.Cały czas też rozwijam swoje umiejętności.
+   <br>
+   <br>Moje hobby to wycieczki górskie,zarówno te rekreacyjne jak i bardziej ekstremalne,motocykle,astronomia i dobra książka. </p>
    <hr/>
     </section>
-   <section id="skills">
+   <section id="skills"><a name="skills"></a>
 
         <h2 class="skillshide">Moje <span>umiejętności</span></h2>
 
-        <p class="skillsmorehide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio accusamus repellat placeat rerum deserunt aliquam iure exercitationem voluptatem sapiente, enim assumenda quibusdam quia impedit explicabo, pariatur, quae. Sapiente, incidunt, ea.</p>
+        <p class="skillsmorehide">Poznałem wszystkie poniższe technologie-oczywiście jedne w mniejszym inne w większym zakresie.Aktualnie mocno rozwijam się w kierunku Wordpressa i języka PHP z racji pracy którą wykonuję.Dużo czasu poświęcam także na nauke JavaScriptu oraz jego bibliotek.</p>
 
         <div id="icons">
             <figure><img src="icons/html5.png" alt="html5">
@@ -95,9 +97,9 @@
                 <div class="portfolio-item-border">
                     <div class="portfolio-item-content">
                         <h3>Opis projektu</h3>
-                        <p class="pinmask">Lorem ipsum dolor sit amet, consectetur adipisicing elit. odit doloremque.</p>
+                        <p class="pinmask">Moja pierwsza strona,będąca moją wizytówką</p>
                         <h4>Technologie</h4>
-                        <p>HTML, CSS3, JavaScript</p>
+                        <p class="tech">HTML, CSS3, JavaScript</p>
                         <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                     </div>
                 </div>
@@ -110,10 +112,10 @@
                 <div class="portfolio-item-border">
                     <div class="portfolio-item-content">
                         <h3>Opis projektu</h3>
-                        <p class="pinmask">Lorem ipsum dolor sit amet, consectetur adipisicing elit. odit doloremque.</p>
+                        <p class="pinmask">Strona typu blog stworzona dla portalu Stacja7.Ponad 700 aktywnych autorów.</p>
                         <h4>Technologie</h4>
-                        <p>HTML, CSS3, JavaScript</p>
-                        <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                        <p class="tech">HTML, CSS3, Wordpress</p>
+                        <a href="http://blogownia.stacja7.pl/"><i class="fa fa-link" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -127,7 +129,7 @@
                         <h3>Opis projektu</h3>
                         <p class="pinmask">Lorem ipsum dolor sit amet, consectetur adipisicing elit. odit doloremque.</p>
                         <h4>Technologie</h4>
-                        <p>HTML, CSS3, JavaScript</p>
+                        <p class="tech">HTML, CSS3, JavaScript</p>
                         <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
                     </div>
                 </div>
@@ -139,7 +141,7 @@
     
     <!--footer-->
     
-<footer id="foot">
+<footer id="foot"><a name="contact"></a>
     <section id="contact">
 		<h2 id="contact-header">Darek Spytkowski</h2>        
 		<address id="contact-content">
@@ -150,6 +152,7 @@
 		  e-mail:<a href=sdarek19@gmail.com>sdarek19@gmail.com</a>
 		</address>
    
+<!--
    <div class="social-icons">
    <a href="" class="social-icon"><i class="fa fa-facebook"></i></a>
    <a href="" class="social-icon"><i class="fa fa-google-plus"></i></a>
@@ -157,6 +160,7 @@
    <a href="" class="social-icon"><i class="fa fa-twitter"></i></a>
    
    </div>
+-->
     </section>
 
     
@@ -164,7 +168,7 @@
        <input type="text" placeholder="Imię i nazwisko"><br>
        <input type="email" placeholder="Adres email">
        <textarea placeholder="Wiadomość"></textarea>
-       <input type="submit" value="Wyślij">
+       <button id="send" type="submit">Wyślij</button> 
         
     </form>
 	</footer>
